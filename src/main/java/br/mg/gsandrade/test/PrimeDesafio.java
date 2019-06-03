@@ -31,7 +31,8 @@ public class PrimeDesafio {
 	@Test
 	public void desafioPrimeFaces() {
 		//combo1
-		dsl.clicaBy(By.xpath("//label[@id='j_idt698:j_idt701']/../..//span"));
+		//dsl.clicaBy(By.xpath("//label[@id='j_idt698:j_idt701']/../..//span"));
+		dsl.clicaBy(By.xpath("//*[contains(@name, 'city_editableInput')]"));
 		dsl.clicaBy(By.xpath("//*[@id='j_idt698:console_items']//li[.='PS4']"));
 		Assert.assertTrue(dsl.contemTexto(By.xpath("//*[@id='j_idt698:console_label']"), "PS4"));
 	

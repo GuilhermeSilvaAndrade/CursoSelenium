@@ -16,20 +16,17 @@ public class DriverFactory {
 			switch (Propriedades.browser) {
 			
 				case FIREFOX: 
-					System.setProperty("webdriver.gecko.driver", 
-							"C:\\Users\\gsilvand\\eclipse-workspace\\CursoSelenium\\resources\\drivers\\geckodriver.exe");
+					System.setProperty("webdriver.gecko.driver", "resources\\drivers\\geckodriver.exe");
 					driver = new FirefoxDriver();
 					break;
 				
 				case CHROME: 
-					System.setProperty("webdriver.chrome.driver", 
-							"C:\\Users\\gsilvand\\eclipse-workspace\\CursoSelenium\\resources\\drivers\\chromedriver.exe");
+					System.setProperty("webdriver.chrome.driver", "resources\\drivers\\chromedriver.exe");
 					driver = new ChromeDriver();
 					break;
 					
 				case IE:
-					System.setProperty("webdriver.ie.driver", 
-							"C:\\Users\\gsilvand\\eclipse-workspace\\CursoSelenium\\resources\\drivers\\IEDriverServer.exe");
+					System.setProperty("webdriver.ie.driver", "resources\\drivers\\IEDriverServer.exe");
 					driver = new InternetExplorerDriver();
 					break;
 			}
